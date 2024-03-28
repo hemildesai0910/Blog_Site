@@ -1,0 +1,76 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.page-background {
+    background-color: #f8f8f8; /* Background color for entire page */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.post {
+    background-color: #fff; /* Background color for individual posts */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.user {
+    font-size: 1.2em;
+    margin: 0;
+    color: #333;
+}
+
+.content {
+    margin-top: 5px;
+    color: #666;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Different background for individual posts */
+.post:nth-child(odd) {
+    background-color: #f9f9f9; /* Light gray background for odd-numbered posts */
+}
+
+.post:nth-child(even) {
+    background-color: #f0f0f0; /* Slightly darker gray background for even-numbered posts */
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    .post {
+        padding: 15px;
+    }
+}
