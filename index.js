@@ -31,7 +31,9 @@ let posts=[
         content : "Ahoo Maharaj!"
     },
 ];
-
+app.get("/",(req,res) => {
+    res.render("index.ejs",{posts});
+});
 
 app.get("/posts",(req,res) => {
     res.render("index.ejs",{posts});
